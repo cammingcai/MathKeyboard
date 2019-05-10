@@ -547,7 +547,7 @@ public class KeyboardFragment extends DialogFragment {
                         Log.d(TAG, "导出公式为：" + convertResult.message);
                         String content = "$$" + convertResult.message + "$$";
                         if (tvOutSide != null) {
-                            tvOutSide.setTag(content);
+//                            tvOutSide.setTag(content);
                             content = LatexUtil.analysisLatex(KeyboardFragment.this.getContext(), content, 0);
                             RichText.fromHtml(content).
                                     with(KeyboardFragment.this.getContext()).
